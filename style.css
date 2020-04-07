@@ -1,0 +1,54 @@
+.gallery-container {
+  max-width: 700px;
+  margin: 16px 0;
+}
+
+.active-image {
+  height: 400px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.active-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active-image .active-caption {
+  position: absolute;
+  bottom: 0;
+  background: #000;
+  width: 100%;
+  padding: 24px;
+  color: #eee;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.gallery-images {
+  display: flex;
+  height: 100px;
+}
+
+.gallery-image {
+  width: 200px;
+  overflow: hidden;
+}
+
+.gallery-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+
+  transition: 400ms;
+}
+
+.gallery-image .image-caption {
+  display: none;
+}
+
+.gallery-image:hover img {
+  transform: scale(1.2);
+}
